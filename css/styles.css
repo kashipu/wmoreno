@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.name {
+    text-transform: uppercase;
+    font-size: 5rem;
+    color: white;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.name span {
+    padding-left: 7rem;
+    color: rgb(0, 162, 255);
+    cursor: pointer;
+}
+
+.name span:hover {
+    color: rgb(0, 255, 200);
+}
+
+.last_name {
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 10px;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    padding-left: 10rem;
+    cursor: pointer;
+}
+
+.last_name:hover {
+    color: rgb(0, 255, 200);
+}
+
+
+
+@media (max-width: 1000px) {
+    .container {
+        height: 100vh;
+        padding: 1rem;
+        display: grid;
+        place-items: center;
+    }
+
+    .name {
+        font-size: 8rem;
+    }
+
+    .name span {
+        padding-left: 0rem;
+        color: rgb(0, 162, 255);
+        cursor: pointer;
+    }
+    
+    .last_name {
+        font-size: 5vw;
+        padding-left: 2rem;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .name {
+        font-size: 3rem;
+        margin: 0 auto;
+    }
+
+    .name span {
+        padding-left: 0rem;
+        color: rgb(0, 162, 255);
+        cursor: pointer;
+    }
+    
+    .last_name {
+        font-size: 1rem;
+        padding-left: 0rem;
+    }
+}
