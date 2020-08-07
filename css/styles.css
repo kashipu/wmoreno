@@ -14,18 +14,19 @@ body {
 .container {
     display: grid;
     place-items: center;
-    height: 100vh;
+    height: 80vh;
     padding: 10px;
 }
 
 .title {
-    width: 90vw;
+    padding: 1rem;
+    width: 80vw;
     display: grid;
 
 }
 
 .name {
-    font-size: clamp(4rem, 5vw, 10rem);
+    font-size: min(10vw, 100px); 
     text-transform: uppercase;
     color: white;
     justify-self: center;
@@ -51,7 +52,7 @@ body {
 }
 
 .last_name {
-    font-size: clamp(1.2rem, 5vw, 1.5rem);
+    font-size: min(5vw, 20px); 
     margin-top: 1rem;
     justify-self: center;
     color: white;
